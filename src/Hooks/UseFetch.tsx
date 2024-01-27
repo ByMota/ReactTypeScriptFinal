@@ -1,11 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-interface FetchState<T> {
-  data: T | null;
-  loading: boolean;
-  error: string | null;
-}
-
 export function useFetch<T>(url: RequestInfo | URL, options?: RequestInit){
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(false);

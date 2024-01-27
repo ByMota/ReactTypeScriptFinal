@@ -1,26 +1,6 @@
 import { IVenda } from "../Context/DataContext";
 import { LineChart,XAxis, Tooltip, Line, YAxis, ResponsiveContainer, Legend } from "recharts";
 
-const dadosGraficos = [
-  {
-    data: '2023-12-04',
-    pago: 3000,
-    processando: 4000,
-    falha: 2000,
-  },
-  {
-    data: '2023-12-05',
-    pago: 4000,
-    processando: 2000,
-    falha: 3000,
-  },
-  {
-    data: '2023-12-06',
-    pago: 2000,
-    processando: 1000,
-    falha: 300,
-  }
-]
 
 interface VendaDia {
   data: string, 
